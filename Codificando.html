@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificar e Decodificar</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>CODIFICANDO ⇆</h1>
+
+            <form>
+            <section>
+            <p>
+                <input id="cesar" type="radio" name="escolha" value="cifradecesar">
+                <label for="base64">Cifra de Cesar</label>
+                <input id="base64" type="radio" name="escolha" value="base64" checked>
+                <label for="base64">Base64</label>
+            </p>
+            </section>
+
+                    <textarea id="resultado" class="mensagem resultado" cols="50" rows="4" readonly
+                    placeholder="Digite sua mensagem..."></textarea>
+        
+                <div class="radio-button">
+                    <p>
+                    <div class="radio">
+                        <input type="radio" name="codificar" id="codificar" value="codificar" checked />
+                        <label for="codificar">codificar</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" name="codificar" id="decodificar" value="decodificar" />
+                        <label for="decodificar">decodificar</label>
+                    </div>
+                </p>
+                </div>
+
+                <textarea id="resultado" class="mensagem resultado" cols="50" rows="4" readonly
+                    placeholder="Mensagem Criptografada"></textarea>
+                <div class="btn">
+                    <p>
+                    <button>Codificar Mensagem!</button>
+                </p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="../trabalho.2/ação.js"></script>
+</body>
+</html>
